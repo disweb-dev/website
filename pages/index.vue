@@ -4,7 +4,7 @@
     <Slogans />
     <Tech />
     <Services />
-    <Projects />
+    <Projects :projects="projects" />
     <About />
     <Contact />
     <Footer />
@@ -12,5 +12,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  async asyncData({ $content }) {
+    const projects = await $content("projects").fetch();
+
+    return { projects };
+  },
+};
 </script>

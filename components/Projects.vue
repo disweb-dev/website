@@ -1,9 +1,16 @@
 <template>
-  <section>projects</section>
+  <section>
+    projects
+    {{ projects }}
+  </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    projects: Object,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
