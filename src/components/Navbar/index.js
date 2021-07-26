@@ -4,7 +4,6 @@ const navbar = ()=> {
     return (
         <>
         <div>
-            DIS websibhdsfhdds ad hddsgfdte dffsfsa
         </div>
         </>
     )

@@ -1,0 +1,10 @@
+@use "../../assets/styles/main.scss" as *;
+
+
+.MainLayout {
+  height: auto;
+  width: $size-s;
+  background-color: $grey;
+  font-family: $fontMain;
+  font-size: 3rem;
+}

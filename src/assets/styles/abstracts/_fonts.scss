@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Euclid Flex";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("/website/src/assets/fonts/EuclidFlex-Regular-WebTrial.woff") format("woff"); 
+  }
+@font-face {
+    font-family: "Euclid Flex";
+    font-style: medium;
+    font-weight: 500;
+    src: local(""), url("/website/src/assets/fonts/EuclidFlex-Medium-WebTrial.woff") format("woff"); 
+  }
+
+
+  $fontMain: "Euclid Flex";
+/* oswald-regular - latin */
+
