@@ -4,13 +4,5 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-            families: ['Oswald'],
-          }
-      },
-    },
   ],
 };

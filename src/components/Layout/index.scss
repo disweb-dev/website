@@ -1,10 +1,9 @@
 @use "../../assets/styles/main.scss" as *;
 
-
 .MainLayout {
   height: auto;
-  width: $size-s;
-  background-color: $grey;
-  font-family: $fontMain;
+  max-width: $size-xs;
+  font-weight: 400;
   font-size: 3rem;
+  background-color: $white;
 }

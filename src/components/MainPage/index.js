@@ -10,7 +10,7 @@ import Footer from "../Footer";
 
 const mainPage = () => {
   return (
-    <section>
+    <main>
       <Header />
       <Hero />
       <Tech />
@@ -19,7 +19,7 @@ const mainPage = () => {
       <About />
       <Contact />
       <Footer />
-    </section>
+    </main>
   );
 };
 
