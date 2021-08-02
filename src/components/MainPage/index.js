@@ -1,6 +1,7 @@
 import React from "React";
 import Header from "../Header";
 import Hero from "../Hero";
+import Slogans from "../Slogans";
 import Tech from "../Tech";
 import Services from "../Services";
 import Projects from "../Projects";
@@ -13,6 +14,7 @@ const mainPage = () => {
     <main>
       <Header />
       <Hero />
+      <Slogans />
       <Tech />
       <Services />
       <Projects />
