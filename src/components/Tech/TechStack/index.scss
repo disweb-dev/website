@@ -2,7 +2,14 @@
 
 svg.Techblocks {
   width: 100%;
- path.Block:hover {
+  height: 100vh;
+  border: 1px solid red;
+  path.Block:hover {
     fill: darken(#ababab, 15%);
+    cursor: pointer;
   }
+}
+.Clicked {
+  fill: #ffb68c;
+  cursor: pointer;
 }
