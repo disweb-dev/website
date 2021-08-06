@@ -1,8 +1,11 @@
 import React from "react";
 
 import "./index.scss";
+/* import "./style.css"; */
 
 const hero = () => {
+
+
   return (
     <section className="HeroText">
       <p>Design. Integration. Softwear.</p>

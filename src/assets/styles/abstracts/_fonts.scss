@@ -1,19 +1,26 @@
 @font-face {
-    font-family: "Euclid Flex";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Euclid Flex"), url("../../../src/assets/fonts/EuclidFlex-Regular-WebTrial.woff") format("woff"); 
-  }
+  font-family: "Euclid Flex";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url("/Users/filipmaciejowski/Documents/Prosjekter/dis/website/src/assets/fonts/EuclidFlex-Regular-WebTrial.woff") format("woff");
+}
 
-@font-face {
-    font-family: "Euclid Flex";
-    font-style: medium;
-    font-weight: 500;
-    src: local("Euclid Flex"), url("../../../src/assets/fonts/EuclidFlex-Regular-WebTrial.woff"
-) format("woff"); 
-  }
+// @font-face {
+//   font-family: "Euclid Flex";
+//   font-style: medium;
+//   font-weight: 500;
+//   src: local("../../fonts/EuclidFlex-Medium-WebTrial.woff"),
+//     url("../../fonts/EuclidFlex-Medium-WebTrial.woff") format("woff");
+// }
 
+$fontMain: "Euclid Flex";
 
-  $fontMain: "Euclid Flex";
-
-
+/* actor-regular - latin */
+/* @font-face {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Actor/actor-v10-latin/actor-v10-latin-regular.woff")
+    format("woff"); 
+} */

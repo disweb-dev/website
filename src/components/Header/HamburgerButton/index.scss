@@ -1,15 +1,14 @@
-@import "../../../assets/styles/main.scss";
+@use "../../../assets/styles/main.scss" as *;
 
 .Menu {
   width: auto;
-
   .Line {
     position: relative;
     z-index: 3;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
     display: block;
     width: 3rem;
-    height: .25rem;
+    height: 0.25rem;
     background-color: $black;
   }
 }

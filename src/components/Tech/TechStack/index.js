@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
-import { techStackList } from "../../../assets/techStackList.js";
+import React, { useState } from "react";
+
 import "./index.scss";
 
 const TechStack = () => {
   const [clickedItem, setClickedColor] = useState([]);
 
-  const colorHandler = (event, id) => {
+  const colorHandler = event => {
     clickedItem.length !== 0 && clickedItem[0].classList.remove(`Clicked`);
     clickedItem.length !== 0 && clickedItem[0].classList.add(`Block`);
     event.target.classList.add("Clicked");

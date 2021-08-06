@@ -1,4 +1,15 @@
-@use "../../assets/styles/main.scss";
+@use "../../assets/styles/main.scss" as *;
+
+
+@font-face {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 400;
+  src: local("./actor-v10-latin/actor-v10-latin-regular.woff") url("./actor-v10-latin/actor-v10-latin-regular.woff"),
+    format("woff"); 
+} 
+
+
 
 .HeroText {
   width: 100%;
@@ -9,6 +20,7 @@
     margin: 0 auto 4rem auto;
     text-align: center;
     line-height: 4.25rem;
+    font-family: $fontMain;
     z-index: 1;
   }
 }

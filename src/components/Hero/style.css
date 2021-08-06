@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Euclid";
+    font-style: normal;
+    font-weight: 400;
+    src: local("../../assets/fonts/EuclidFlex-Medium-WebTrial.woff"),
+     url("../../assets/fonts/EuclidFlex-Medium-WebTrial.woff") format("woff"); 
+  }
+  
+
+  .HeroText p {
+    position: relative;
+    width: 85%;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+    line-height: 4.25rem;
+    font-family: 'Euclid';
+    z-index: 1;
+  }

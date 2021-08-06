@@ -3,9 +3,9 @@ import React from "react";
 import MainPage from "../MainPage";
 import Navbar from "../Navbar";
 
-import "./index.scss"
+import "./index.scss";
 
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <main className="MainLayout">
       {children}
@@ -15,4 +15,4 @@ const layout = ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;
