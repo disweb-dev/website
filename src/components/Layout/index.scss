@@ -1,9 +1,9 @@
-@use "../../assets/styles/main.scss" as *;
+@use "../../styles/main.scss" as var;
 
 .MainLayout {
   height: auto;
-  max-width: $size-xs;
+  max-width: var.$size-xs;
   font-weight: 400;
   font-size: 3rem;
-  background-color: $white;
+  background-color: var.$white;
 }

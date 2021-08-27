@@ -1,5 +1,13 @@
 export const techStackList = {
-  CSS: "lorem10",
+  JavaScript: "Lorem",
+  CSS: "llorem20",
   PHP: "filip",
-  MongoDB: "Konrad",
+  MongoDB: "lorem ipsum",
+  Wordpress: "lorem ipsum",
+  FireBase: "lorem ipsum",
+  MySql: "lorem ipsum",
+  Strapi: "lorem ipsum",
+  React: "lorem Ipsum",
+  NodeJS: "lorem ipsum",
+  Sass: "lorem ipsum"
 };

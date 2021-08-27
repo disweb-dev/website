@@ -1,33 +1,37 @@
 import React, { useState } from "react";
 
+import { techStackList } from "../../../assets/techStackList";
+
 import "./index.scss";
 
 const TechStack = () => {
   const [clickedItem, setClickedColor] = useState([]);
-
+  const [TechDescription, setTechDescription] = useState("");
   const colorHandler = event => {
     clickedItem.length !== 0 && clickedItem[0].classList.remove(`Clicked`);
     clickedItem.length !== 0 && clickedItem[0].classList.add(`Block`);
     event.target.classList.add("Clicked");
     event.target.classList.remove("Block");
     setClickedColor([event.target]);
+    setTechDescription(techStackList[event.target.id]);
+    console.log(TechDescription);
   };
 
   return (
     <>
       <svg
         width="244"
-        height="124"
+        height="144"
         viewBox="0 0 244 124"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="Techblocks"
+        className="TechBlocks__SVG"
       >
         <path
           className="Block"
           id="PHP"
           d="M152.305 1.07617L152.302 61.6529H122.127V61.6498H121.993V31.3477H91.7773V1.07617H152.305Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -37,7 +41,7 @@ const TechStack = () => {
           className="Block"
           id="Redux"
           d="M1 1.07324L1.00305 61.65H31.1786V61.6469H31.3127V31.3448H61.5278V1.07324H1Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -47,7 +51,7 @@ const TechStack = () => {
           className="Block"
           id="JavaScript"
           d="M91.7752 91.9434H1.11133V122.215H91.7752V91.9434Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -57,7 +61,7 @@ const TechStack = () => {
           className="Block"
           id="MongoDB"
           d="M152.332 31.2716V1H182.489V30.0729H182.495V31.2899H242.999V61.5615H152.335V31.2716H152.332Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -67,7 +71,7 @@ const TechStack = () => {
           className="Block"
           id="Wordpress"
           d="M242.904 92.0889H122.086V122.36H242.904V92.0889Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -77,7 +81,7 @@ const TechStack = () => {
           className="Block"
           id="FireBase"
           d="M122.081 61.6406L122.078 122.217H91.902V122.214H91.7679V91.9122H61.5527V61.6406H122.081Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -87,7 +91,7 @@ const TechStack = () => {
           className="Block"
           id="MySql"
           d="M61.6392 91.9322L61.6361 31.3555H31.4605V31.3585H31.3265V61.6607H1.11133V91.9322H61.6392Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -97,7 +101,7 @@ const TechStack = () => {
           className="Block"
           id="CSS"
           d="M242.864 61.5762H212.707V91.8477H242.864V61.5762Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -107,7 +111,7 @@ const TechStack = () => {
           className="Block"
           id="NodeJS"
           d="M212.762 61.6719H122.098V91.9434H212.762V61.6719Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -117,7 +121,7 @@ const TechStack = () => {
           className="Block"
           id="React"
           d="M61.5156 61.6685L61.5187 1.0918H91.6943V1.09485H91.8283V31.397H122.043V61.6685H61.5156Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -127,7 +131,7 @@ const TechStack = () => {
           className="Block"
           id="Sass"
           d="M242.99 1.04004H182.551V31.3116H242.99V1.04004Z"
-          onClick={event => colorHandler(event)}
+          onClick={colorHandler}
           fill="#ABABAB"
           stroke="#FFFBF9"
           strokeWidth="2"
@@ -388,6 +392,8 @@ const TechStack = () => {
           fill="#FFFBF9"
         />
       </svg>
+      <p className="TechName">{clickedItem.length !== 0 && clickedItem[0].id}</p>
+      <p>{TechDescription}</p>
     </>
   );
 };
